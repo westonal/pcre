@@ -1,3 +1,18 @@
+cywgin install
+---
+
+Change line endings (https://stackoverflow.com/a/32912867)
+
+sed -i 's/\r$//' ./configure
+sed -i 's/\r$//' ./config.sub
+sed -i 's/\r$//' ./config.guess
+sed -i 's/\r$//' ./missing
+
+Make and install
+
+./configure && make && make install
+
+
 README file for PCRE (Perl-compatible regular expression library)
 -----------------------------------------------------------------
 
